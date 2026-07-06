@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul-noite: #1A1A2E;
+    --azul-medio: #16213E;
+    --azul-claro: #0F3460;
+    --amarelo: #F7B731;
+    --amarelo-hover: #e0a61f;
+    --coral: #FF6B6B;
+    --verde-gelo: #E8F4F0;
+    --branco: #FFFFFF;
+    --cinza-texto: #A8B2C1;
+    --card-bg: #1E2A45;
+    --card-border: rgba(255, 255, 255, 0.07);
+}
