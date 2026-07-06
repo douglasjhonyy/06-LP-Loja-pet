@@ -1,0 +1,68 @@
+nav{
+    position: fixed; /* fica no topo ao rolar */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* na frente de tudo */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    background: rgba(26, 26, 46, 0.96);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(247, 183, 49, 0.12);
+    transition: background 0.3s;
+}
+
+.nav-logo{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: var(--amarelo);
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.nav-logo span{
+    color: var(--branco);
+}
+
+.nav-links{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links a{
+    color: var(--cinza-texto);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.25s ease;
+}
+
+.nav-links a:hover{
+    color: var(--amarelo);
+    
+}
+
+/* Botão especial na navbar */
+
+.nav-cta{
+    background: var(--amarelo) !important;
+    color: var(--azul-noite) !important;
+    padding: 0.5rem 1.4rem;
+    border-radius: 50px;
+    font-weight: bold !important;
+    font-size: 0.85rem !important;
+    transition: background 0.2s, transform 0.15s !important;
+}
+
+.nav-cta:hover{
+    background: var(--amarelo-hover) !important;
+    transform: scale(1.04);
+    
+}
