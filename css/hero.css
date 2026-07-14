@@ -1,38 +1,135 @@
-.hero{
-    min-height: 100vh;  /* altura mínima = tela inteira */
-    display: flex;
-    align-items: center;
-    padding: 7rem 5% 5rem;
-    position: relative;
-    overflow: hidden;
+.hero {
+   min-height: 100vh;
+   /* altura mínima = tela inteira */
+   display: flex;
+   align-items: center;
+   padding: 7rem 5% 5rem;
+   position: relative;
+   overflow: hidden;
 }
 
 /* Gradiente de fundo decorativo */
 
-.hero::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background:  radial-gradient(ellipse at 70% 50%, rgba(247, 183, 49, 0.07) 0%, transparent 55%),
-        radial-gradient(ellipse at 15% 80%, rgba(255, 107, 107, 0.05) 0%, transparent 45%);
+.hero::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background: radial-gradient(ellipse at 70% 50%, rgba(247, 183, 49, 0.07) 0%, transparent 55%),
+      radial-gradient(ellipse at 15% 80%, rgba(255, 107, 107, 0.05) 0%, transparent 45%);
 }
 
- /* Patinhas flutuantes no fundo */
- .paw-bg{
-    position: absolute;
-    font-size: 2rem;
-    opacity: 0.05;
-    pointer-events: none;
-    animation: floatpaw 7s ease-in-out infinite;
- }
+/* Patinhas flutuantes no fundo */
+.paw-bg {
+   position: absolute;
+   font-size: 2rem;
+   opacity: 0.05;
+   pointer-events: none;
+   animation: floatpaw 7s ease-in-out infinite;
+}
 
- @keyframes floatpaw{
-    0%, 100% { transform: translateY(0px) rotate(-8deg); }
-      50%       { transform: translateY(-22px) rotate(8deg); }
- }
- 
- .hero-content{
-    position: relative;
-    z-index: 2;
-    max-width: 600px;
- }
+@keyframes floatpaw {
+
+   0%,
+   100% {
+      transform: translateY(0px) rotate(-8deg);
+   }
+
+   50% {
+      transform: translateY(-22px) rotate(8deg);
+   }
+}
+
+.hero-content {
+   position: relative;
+   z-index: 2;
+   max-width: 600px;
+}
+
+/* Badge "Melhor pet shop" */
+
+.hero-badge {
+   display: inline-flex;
+   align-items: center;
+   gap: .4rem;
+   background: rgba(247, 183, 49, 0.1);
+   border: 1px solid rgba(247, 183, 49, 0.28);
+   color: var(--amarelo);
+   padding: .4rem 1.1rem;
+   border-radius: 50px;
+   font-size: .78rem;
+   font-weight: 700;
+   letter-spacing: 0.4px;
+   margin-bottom: 1.6rem;
+}
+
+/* Título principal */
+.hero h1 {
+   font-family: 'Nunito', sans-serif;
+   font-size: clamp(2.6rem, 5vw, 4rem);
+   /* responsivo com clamp */
+   ;
+   font-weight: 900;
+   line-height: 1.1;
+   letter-spacing: -1.5px;
+   margin-bottom: 1.2rem;
+}
+
+.hero h1 em {
+   font-style: normal;
+   color: var(--amarelo);
+}
+
+.hero-desc {
+   color: var(--cinza-texto);
+   font-size: 1.05rem;
+   line-height: 1.75;
+   max-width: 470px;
+   margin-bottom: 2.2rem;
+}
+
+/* Grupo de botões */
+.hero-btns {
+   display: flex;
+   gap: 1rem;
+   flex-wrap: wrap;
+   margin-bottom: 3rem;
+}
+
+/*Botão Primario (amarelo)*/
+.btn-primary {
+   background: var(--amarelo);
+   color: var(--azul-noite);
+   padding: 0.9rem 2.2rem;
+   border-radius: 50px;
+   font-weight: 800;
+   font-size: 0.95rem;
+   text-decoration: none;
+   border: none;
+   cursor: pointer;
+   display: inline-block;
+   transition: background 0.2s, transform 0.15s;
+}
+
+.btn-primary:hover {
+   background: var(--amarelo-hover);
+   transform: translateY(-3px);
+}
+
+/* Botão secundário (contorno) */
+.btn-outline {
+   border: 1.5px solid rgba(255, 255, 255, 0.18);
+   color: var(--branco);
+   padding: 0.9rem 2.2rem;
+   border-radius: 50px;
+   font-weight: 600;
+   font-size: 0.9rem;
+   text-decoration: none;
+   display: inline-block;
+   transition: border-color 0.2s, background 0.2s;
+}
+
+
+.btn-outline:hover {
+   border-color: var(--amarelo);
+   background: rgba(247, 183, 49, 0.07);
+}
