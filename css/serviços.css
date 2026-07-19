@@ -1,13 +1,13 @@
 /*Classes Reutilizaveis*/
-.section{
+.section {
     padding: 5.5rem 5%;
 }
 
-.section-alt{
+.section-alt {
     background: var(--azul-medio);
 }
 
-.section-label{
+.section-label {
     font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 2.5px;
@@ -16,22 +16,23 @@
     margin-bottom: 0.5rem;
 }
 
-.section-sub{
+.section-sub {
     color: var(--cinza-texto);
     font-size: 0.95rem;
     line-height: 1.75;
     max-width: 480px;
     margin-bottom: 3rem;
 }
- /*Serviços*/
 
-.services-grid{
+/*Serviços*/
+
+.services-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1.2rem;
 }
 
-.service-card{
+.service-card {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
     border-radius: 18px;
@@ -44,7 +45,7 @@
 
 /*Barra animada no topo de card*/
 
-.service-card::before{
+.service-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -57,35 +58,37 @@
     transition: transform 0.3s ease;
 }
 
-.service-card:hover{
+.service-card:hover {
     transform: translateX(-5px);
     border-color: rgba(247, 183, 49, 0.22);
 }
 
-.service-card:hover:before{
+.service-card:hover:before {
     transform: scaleX(1);
 }
 
-.service-icon{
-    font-size: 2.4rem;
-    display: block;
-    margin-bottom: 1rem;
+.service-img {
+    width: 400px;
+    height: 400px;
+    
+  object-fit: cover;
+    border-radius: 8px;
 }
 
-.service-card h3{
+.service-card h3 {
     font-family: 'Nunito', sans-serif;
     font-size: 1.1rem;
     font-weight: 800;
     margin-bottom: 0.5rem;
 }
 
-.service-card p{
+.service-card p {
     color: var(--cinza-texto);
     font-size: 0.8rem;
     line-height: 1.65;
 }
 
-.service-price{
+.service-price {
     display: inline-block;
     margin-top: 1rem;
     font-size: 0.78rem;
