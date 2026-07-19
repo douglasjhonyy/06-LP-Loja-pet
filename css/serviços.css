@@ -1,28 +1,36 @@
 /*Classes Reutilizaveis*/
 .section {
-    padding: 5.5rem 5%;
-}
-
-.section-alt {
-    background: var(--azul-medio);
-}
-
-.section-label {
-    font-size: 0.72rem;
-    font-weight: 700;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    color: var(--amarelo);
-    margin-bottom: 0.5rem;
-}
-
-.section-sub {
-    color: var(--cinza-texto);
-    font-size: 0.95rem;
-    line-height: 1.75;
-    max-width: 480px;
-    margin-bottom: 3rem;
-}
+      padding: 5.5rem 5%;
+    }
+ 
+    .section-alt {
+      background: var(--azul-medio);
+    }
+ 
+    .section-label {
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--amarelo);
+      margin-bottom: 0.5rem;
+    }
+ 
+    .section-title {
+      font-family: 'Nunito', sans-serif;
+      font-size: 3rem;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 0.8rem;
+    }
+ 
+    .section-sub {
+      color: var(--cinza-texto);
+      font-size: 1.1rem;
+      line-height: 1.75;
+      max-width: 480px;
+      margin-bottom: 3rem;
+    }
 
 /*Serviços*/
 
@@ -69,9 +77,8 @@
 
 .service-img {
     width: 400px;
-    height: 400px;
-    
-  object-fit: cover;
+    height: 250px;
+    object-fit: cover;
     border-radius: 8px;
 }
 

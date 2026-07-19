@@ -27,7 +27,7 @@
       transform: translateY(-50%);
       width: clamp(280px, 30vw, 420px);
       height: clamp(280px, 30vw, 420px);
-      background: rgba(247, 183, 49, 0.05);
+      background: #ffbc1ee3;
       border-radius: 50%;
       border: 1px solid rgba(247, 183, 49, 0.1);
       display: flex;
@@ -35,6 +35,7 @@
       justify-content: center;
       font-size: clamp(100px, 12vw, 170px);
       animation: pulseCircle 5s ease-in-out infinite;
+      
  }
 
  @keyframes pulseCircle {
