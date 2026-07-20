@@ -98,10 +98,16 @@
 .service-price {
     display: inline-block;
     margin-top: 1rem;
-    font-size: 0.78rem;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--amarelo);
     background: rgba(247, 183, 49, 0.1);
     padding: 0.25rem 0.75rem;
     border-radius: 50px;
+
+    transition: transform 0.3s;
+}
+
+.service-price:hover{
+    transform: translateY(-5px)
 }
