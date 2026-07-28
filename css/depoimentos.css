@@ -1,0 +1,62 @@
+.depoimentos-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.depo-card{
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: transform 0.2s;
+}
+
+ .depo-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .depo-stars{
+        color: var(--amarelo);
+        font-size: 1rem;
+        letter-spacing: 3px;
+        margin-bottom: 1rem;
+    }
+
+    .depo-card blockquote{
+        color: var(--cinza-texto);
+        font-size: 1.1rem;
+        line-height: 1.75;
+        font-style: italic;
+        margin-bottom: 1.5rem;
+        border: none;
+        padding: 0;
+    }
+
+    .depo-autor{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .avatar{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color:  rgba(247, 183, 49, 0.12);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: 1.5rem;
+        flex-shrink: 0;
+    }
+
+    .depo-nome strong{
+        display: block;
+        font-size: 0.88rem;
+        font-weight: 700;
+    }
+
+    .depo-nome span{
+        font-size: 0.77rem;
+        color: var(--cinza-texto)    }
