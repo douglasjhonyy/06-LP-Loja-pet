@@ -1,0 +1,37 @@
+.diferenciais-grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    
+    
+}
+
+.diferencial-item{
+    display: flex;
+    gap: 1.1rem;
+    align-items: center;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.diferencial-icon{
+    width: 100px;
+    height: 100px;
+    min-width: 50px;
+    border-radius: 12px;
+    font-size: 1.3rem;
+}
+
+.diferencial-item h4{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--amarelo);
+}
+
+.diferencial-item p{
+     color: var(--cinza-texto);
+      font-size: 1.1rem;
+      line-height: 1.6;
+}
