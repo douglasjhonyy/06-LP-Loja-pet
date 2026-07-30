@@ -19,10 +19,25 @@
     margin-bottom: 1.2rem;
 }
 
-.info-icon{
+.info-icon {
     font-size: 1.2rem;
     margin-top: 0.1rem;
     flex-shrink: 0;
+    
+}
+
+.icon-png{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-png-btn{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
 }
 
 .info-item strong{
