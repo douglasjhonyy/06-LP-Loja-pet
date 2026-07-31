@@ -1,0 +1,74 @@
+.cta-section {
+    padding: 5.5rem;
+    text-align: center;
+    background: var(--azul-medio);
+    border-top: 1px solid rgba(247, 183, 49, 0.08);
+    border-bottom: 1px solid rgba(247, 183, 49, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 50%, rgba(247, 183, 49, 0.06) 0%, transparent 65%);
+    pointer-events: none;
+}
+
+.cta-section h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 900;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.cta-section h2 em {
+    font-style: normal;
+    color: var(--amarelo);
+}
+
+.cta-section p {
+    color: var(--cinza-texto);
+    margin-bottom: 2.2rem;
+    font-size: 1rem;
+    position: relative;
+}
+
+.cta-form {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.cta-input {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    color: var(--branco);
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    width: 300px;
+    max-width: 100%;
+    transition: border-color 0.25s;
+}
+
+.cta-input:focus {
+    border-color: rgba(247, 183, 49, 0.5);
+}
+
+.cta-input::placeholder {
+    color: var(--cinza-texto);
+}
+
+.cta-nota {
+    margin-top: 1rem;
+    font-size: 0.78rem;
+    color: var(--cinza-texto);
+    position: relative;
+}
