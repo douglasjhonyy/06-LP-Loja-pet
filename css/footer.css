@@ -26,9 +26,9 @@ footer {
 }
 
 .social-btn {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
     border: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
@@ -37,6 +37,14 @@ footer {
     text-decoration: none;
     transition: border-color, background 0.2s;
     cursor: pointer;
+}
+
+.icon-social{
+     width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-btn:hover {
@@ -54,11 +62,19 @@ footer {
 
 .footer-col ul {
     list-style: none;
+    
 }
 
 .footer-col li {
     margin-bottom: 0.6rem;
     list-style: none;
+    display: flex;
+    gap: 0.6rem;
+    color: var(--cinza-texto);
+}
+
+.footer-col li:hover {
+    color: var(--amarelo);
 }
 
 .footer-col a {
@@ -72,7 +88,14 @@ footer {
     color: var(--amarelo);
 }
 
-.footer-bottom{
+.icon-footer {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    
+}
+
+.footer-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,18 +110,18 @@ footer {
     font-size: 0.8rem;
 }
 
-.footer-bottom a{
+.footer-bottom a {
     color: var(--cinza-texto);
     font-size: 0.8rem;
     text-decoration: none;
     transition: color 0.2s;
 }
 
-.footer-bottom a:hover{
+.footer-bottom a:hover {
     color: var(--amarelo);
 }
 
-.footer-links-bottom{
+.footer-links-bottom {
     display: flex;
     gap: 1.5rem;
 }
