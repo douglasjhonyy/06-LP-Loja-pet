@@ -1,5 +1,3 @@
-<img width="1523" height="7608" alt="pataFeliz" src="https://github.com/user-attachments/assets/93dbff2f-1562-4758-8fa3-0fe6932b9032" />
-
 <h1>Sobre o projeto</h1>
 
 A PataFeliz é uma landing page fictícia criada com o objetivo de praticar e consolidar conceitos fundamentais de desenvolvimento web front-end. O projeto simula o site de uma pet shop profissional, com identidade visual própria, seções completas de conteúdo e interatividade em JavaScript.
@@ -31,3 +29,5 @@ A PataFeliz é uma landing page fictícia criada com o objetivo de praticar e co
 - CSS3	—	Estilização, animações e responsividade
 - JavaScript	ES6+	Interatividade e manipulação do DOM
 - Google Fonts	—	Tipografia (Nunito + Inter)
+
+  <img width="1920" height="7608" alt="pataFeliz" src="https://github.com/user-attachments/assets/93dbff2f-1562-4758-8fa3-0fe6932b9032" />
